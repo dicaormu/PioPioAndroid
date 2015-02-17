@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selectable_item_background"
+    android:padding="@dimen/padding">
+    <ImageView
+        android:id="@+id/profile_picture_search"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        />
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="64dp"
+        android:id="@+id/user_name_search"
+        android:layout_height="64dp"
+        android:padding="10dp"
+        android:textSize="24sp"
+        android:textColor="#000">
+
+
+        </TextView>
+</RelativeLayout>

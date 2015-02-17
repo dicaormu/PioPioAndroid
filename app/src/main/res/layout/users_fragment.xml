@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- este layout crea una lista de elementos Eso eso es lo que aueremos para mostrar los usuarios twiter!-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<ListView
+    android:id="@android:id/list"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:listitem="@layout/user_item">
+<!-- puedo usar los dp es decir pixeles o wrap_content fill_parent esta deprecado. la barra en lo alto viene con el sistema, pero puedo decirle al sistema que no la ponga
+el estandar de @+id/ es utilizado para crear los identificadores y accederlos desde los java ou otros elementos. desde java: R.id.nombre elemento.
+uno puede tener tambien R.Layout.activity_main o users_fragment. no es cierto para los resources
+para referenciar otro elemento se usa: @android:id/lists. entonces la cosa no pertenece al elemento
+sino a android
+@dimen/padding se encuentran en dimens.xml  y @string/friends en strings.xml
+se podrian fusionar en un mismo archivo, lo importante sn la valises.
+?android el interrogante es una variable
+
+
+-->
+</ListView>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="@dimen/padding"
+        android:tag="Follow"
+        android:background="@drawable/fab_background"
+        android:src="@drawable/ic_action"
+        android:id="@+id/followUser"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="@dimen/padding"
+        android:tag="Tweet"
+        android:background="@drawable/fab_background"
+        android:src="@drawable/list_icon"
+        android:id="@+id/listTweets"/>
+
+    <!--ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="@dimen/padding"
+        android:tag="Tweet"
+        android:background="@drawable/fab_background"
+        android:src="@drawable/edit_24"
+        android:id="@+id/post"/-->
+
+
+
+</FrameLayout>

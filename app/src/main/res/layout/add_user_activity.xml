@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user"
+        android:textSize="24sp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autocomplete_user"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+
+        android:textSize="24sp"/>
+   <ImageView
+        android:id="@+id/profile_picture_selected"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/autocomplete_user"
+        android:layout_alignLeft="@+id/autocomplete_user"
+        android:layout_alignStart="@+id/autocomplete_user" />
+    <TextView
+        android:id="@+id/handle_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_below="@+id/autocomplete_user"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_alignRight="@+id/profile_picture_selected"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="64dp"
+        android:layout_alignLeft="@+id/profile_picture_selected"
+         />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="@string/add_user"
+        android:background="@drawable/fab_background"
+        android:src="@drawable/edit_24"
+        android:id="@+id/add_user_button"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="134dp" />
+
+</RelativeLayout>
